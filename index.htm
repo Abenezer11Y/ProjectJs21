@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Async Function</h1>
+    <p id="we"></p>
+    
+    <script>
+        async function add(a, b) {
+            let response = await a + b;
+            display(response)
+        }
+
+        function display(some) {
+            document.getElementById("we").innerHTML = some;
+        }
+        add(20, 80)
+    </script>
+</body>
+</html>

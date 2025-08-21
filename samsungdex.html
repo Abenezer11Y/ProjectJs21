@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Callbacks in JS</h1>
+    <p>Do a calculation and display a result</p>
+    <p id="we"></p>
+
+    <script>
+        function callMeBackLater(va){
+            document.getElementById("we").innerHTML = va;
+        };
+
+        function calculator(num1, num2, dail){
+            let sum = num1 + num2;
+            dail(sum);
+        };
+        calculator(10, 90, callMeBackLater);
+    </script>
+</body>
+</html>
